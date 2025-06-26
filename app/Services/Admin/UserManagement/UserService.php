@@ -76,7 +76,7 @@ class UserService
     {
         $user->update([
             'status' => !$user->status,
-            'updated_by' => user()->id,'updater_type'=> get_class(user())
+            'updated_by' => admin()->id,'updater_type'=> get_class(admin())
         ]);
     }
 }
